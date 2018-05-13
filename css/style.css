@@ -1,0 +1,219 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+#custom {
+    margin-top: 100px;
+}
+
+.panel {
+    width: 400px;
+}
+
+.lista>ul li {
+    list-style-type: none;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+}
+
+#name span {
+    float: right;
+    cursor: pointer;
+}
+
+/*1. Border Radius property */
+
+.box {
+    font-size: 14px;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    border-radius: 0px;
+    background-color: #666;
+}
+
+/*2- Box Shadow */
+
+.box {
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+}
+
+/*3 Text Shadows */
+
+.box p {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    text-shadow: 0px 1px 0px white;
+}
+
+/*4 Gradients */
+
+.box {
+    background: -webkit-gradient(linear, left top, right top, from(red), to(green));
+    background: -webkit-linear-gradient(left, red, green);
+    background: -o-linear-gradient(left, red, green);
+    background: linear-gradient(left, red, green);
+}
+
+/* 5 columns */
+
+.box1 p {
+    -webkit-column-count: 3;
+    column-count: 3;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+/* 6 Media Queries */
+
+@media screen and (max-width: 800px) {
+    .box1 p {
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+}
+
+/*6 Transition */
+
+@media screen and (max-width: 800px) {
+    .box p {
+        transition: ease-in-out 2s;
+        background-color: lightgreen;
+    }
+    .box p:hover {
+        background: green;
+        transform: rotateX(360deg);
+        transform: translateX(180deg);
+    }
+}
+
+.fa-cog {
+    font-size: 80px !important;
+    color: white;
+}
+
+.fa-cog:hover {
+    transform: rotate(180deg);
+    transform: translateX(180deg);
+}
+
+.box2 {
+    float: right;
+}
+
+.box3 {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background: black;
+    color: white;
+    line-height: 200px;
+    font-size: 14px;
+    text-align: center;
+    text-shadow: 0px 1px 0px black;
+    animation: rotating 10s linear infinite;
+}
+
+@keyframes rotating {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.star-six {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid red;
+    position: relative;
+    animation: rotating 2s linear infinite;
+}
+
+.star-six:after {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid red;
+    position: absolute;
+    content: "";
+    top: 30px;
+    left: -50px;
+}
+
+/*Font - face */
+
+@font-face {
+    font-family: 'jasmine';
+    src: url('fonts/cac_champagne-webfont.eot');
+    src: url('fonts/cac_champagne-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/cac_champagne-webfont.woff') format('woff'), url('fonts/cac_champagne-webfont.ttf') format('truetype'), url('fonts/cac_champagne-webfont.svg#cac_champagneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.font-faces h1 {
+    font-family: jasmine;
+}
+
+.selector {
+    background: white;
+    width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.selector>h1 {
+    font-family: jasmine;
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+    transform: rotate(355deg);
+}
+
+.zellah>li:hover {
+    transform: rotate(360deg);
+    transition: all 2s linear;
+    background: grey;
+}
+
+.zellah>li:nth-child(3n+1) {
+    background: pink;
+}
+
+.selector>h1:hover {
+    transform: rotate(360deg);
+    transition: all 2s linear;
+    background: grey;
+}
+
+.zellah li {
+    float: left;
+    color: white;
+    text-shadow: 0px 1px 0px black;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    list-style: none;
+    width: 280px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    background: red;
+    font-family: jasmine;
+}
+.panel{
+    margin-right: 10px;
+}
